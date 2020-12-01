@@ -44,11 +44,12 @@ async function remove(boardId) {
 }
 
 async function update(board) {
+    console.log('board----', board);
     const collection = await dbService.getCollection('boards')
     board._id = ObjectId(board._id);
 
     try {
-        await collection.replaceOne({ _id: board._id }, { $set: board })
+        await collection.updateOne({ _id: board._id }, { $set: board })
         return board
     } catch (err) {
         console.log(`ERROR: cannot update board ${board._id}`)
