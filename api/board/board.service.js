@@ -27,7 +27,7 @@ async function getById(boardId) {
         const board = await collection.findOne({ '_id': ObjectId(boardId) })
         return board;
     } catch (err) {
-        console.log(`ERROR: while finding toy ${boardId}`)
+        console.log(`ERROR: while finding board ${boardId}`)
         throw err;
     }
 }
