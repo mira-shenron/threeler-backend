@@ -45,9 +45,9 @@ connectSockets(io)
 //     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 // })
 
-const logger = require('./services/logger.service')
+//const logger = require('./services/logger.service')
 const port = process.env.PORT || 3030;
 
 http.listen(port, () => {
-    logger.info('Server is running on port: ' + port)
+    console.log('Server is running on port: ' + port)
 });
