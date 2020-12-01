@@ -16,7 +16,7 @@ async function query(filterBy = {}) {
         const boards = await collection.find().toArray();
         return boards;
     } catch (err) {
-        console.log('ERROR: cannot find toys')
+        console.log('ERROR: cannot find boards')
         throw err;
     }
 }
@@ -38,20 +38,21 @@ async function remove(boardId) {
     try {
         await collection.deleteOne({ '_id': ObjectId(boardId) })
     } catch (err) {
-        console.log(`ERROR: cannot remove toy ${boardId}`)
+        console.log(`ERROR: cannot remove board ${boardId}`)
         throw err;
     }
 }
 
 async function update(board) {
+    console.log('board----', board);
     const collection = await dbService.getCollection('boards')
     board._id = ObjectId(board._id);
 
     try {
-        await collection.replaceOne({ _id: board._id }, { $set: board })
+        await collection.updateOne({ _id: board._id }, { $set: board })
         return board
     } catch (err) {
-        console.log(`ERROR: cannot update toy ${board._id}`)
+        console.log(`ERROR: cannot update board ${board._id}`)
         throw err;
     }
 }
