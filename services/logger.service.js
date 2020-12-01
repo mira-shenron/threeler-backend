@@ -11,12 +11,12 @@ function getTime() {
     return now.toUTCString();
 }
 
-// function doLog(line, level='Debug') {
+function doLog(line, level='Debug') {
 //     if (typeof line !== 'string') line = JSON.stringify(line)
 //     line = `${getTime()} - ${level} - ${line}\n` 
 //     console.log(line);
 //     fs.appendFileSync('./logs/backend.log',line);
-// }
+}
 
 module.exports = {
     debug(line){
