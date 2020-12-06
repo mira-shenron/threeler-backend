@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4239a766db352d24a8a",
-    "url": "/css/app.8457573d.css"
+    "revision": "ac46a29257d945bcc5f3",
+    "url": "/css/app.df2f7ea4.css"
   },
   {
     "revision": "f0869bd7091500a24f26",
@@ -48,12 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/rainbowbars.b7be0dec.jpg"
   },
   {
-    "revision": "590788bdbab13677613dc59ad0635a0d",
+    "revision": "0ffdc556961acf1d9c1076fe46f7ce76",
     "url": "/index.html"
   },
   {
-    "revision": "c4239a766db352d24a8a",
-    "url": "/js/app.248a488c.js"
+    "revision": "ac46a29257d945bcc5f3",
+    "url": "/js/app.8ff28719.js"
   },
   {
     "revision": "f0869bd7091500a24f26",
